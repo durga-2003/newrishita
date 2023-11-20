@@ -4,11 +4,11 @@ import datetime
 import re
 from deta import Deta
 
-DETA_KEY = 'a05wuxpbrrh_1DGv22dsj5tzQ7fN7TA5ZYzht3yFVjKw'
+DETA_KEY = 'a05wuxpbrrh_CNwCQ3dXtrTXatRCyaV1me5B4ZV3J4wk'
 
 deta = Deta(DETA_KEY)
 
-db = deta.Base('StreamlitAuth')
+db = deta.Base('newrishita')
 
 
 def insert_user(email, username, password):
