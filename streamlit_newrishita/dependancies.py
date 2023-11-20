@@ -4,11 +4,11 @@ import datetime
 import re
 from deta import Deta
 
-DETA_KEY = 'a05wuxpbrrh_CNwCQ3dXtrTXatRCyaV1me5B4ZV3J4wk'
+DETA_KEY = 'a05wuxpbrrh_99gFcwiyqU9GQA8RemiSFVGNMjsmE3op'
 
 deta = Deta(DETA_KEY)
 
-db = deta.Base('newrishita')
+db = deta.Base('today')
 
 
 def insert_user(email, username, password):
@@ -22,6 +22,7 @@ def insert_user(email, username, password):
     date_joined = str(datetime.datetime.now())
 
     return db.put({'key': email, 'username': username, 'password': password, 'date_joined': date_joined})
+
 
 def fetch_users():
     """
