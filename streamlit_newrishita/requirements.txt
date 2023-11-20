@@ -54,8 +54,8 @@ networkx==3.1
 numpy==1.23.5
 openpyxl==3.0.10
 packaging==23.1
-pandas==2.0.3
-pandas-profiling==3.2.0
+pandas
+pandas-profiling
 parso==0.8.3
 patsy==0.5.3
 peewee==3.17.0
