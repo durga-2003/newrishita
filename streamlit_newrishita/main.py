@@ -66,11 +66,11 @@ try:
                    end = '2023-7-30'
 
 
-                    st.title('Stock Future Predicter')
+                   st.title('Stock Future Predicter')
 
-                    use_input = st.text_input('Enter stock Ticker', 'AAPL')##############
+                   use_input = st.text_input('Enter stock Ticker', 'AAPL')##############
 
-                    if st.button('Predict'):
+                   if st.button('Predict'):
                         df = yf.download(use_input, start ,end )
 
             
@@ -135,7 +135,7 @@ try:
                         x_test = []
                         y_test = []
 
-                        for i in range(100 , input_data.shape[0]):
+                    for i in range(100 , input_data.shape[0]):
                             x_test.append(input_data[i-100:i])
                             y_test.append(input_data[i,0])
                         x_test, y_test = np.array(x_test), np.array(y_test)
