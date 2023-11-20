@@ -13,7 +13,7 @@ try:
     passwords = []
 
     for user in users:
-        emails.append(user['a05wuxpbrrh_CNwCQ3dXtrTXatRCyaV1me5B4ZV3J4wk'])
+        emails.append(user['key'])
         usernames.append(user['username'])
         passwords.append(user['password'])
 
@@ -21,7 +21,7 @@ try:
     for index in range(len(emails)):
         credentials['usernames'][usernames[index]] = {'name': emails[index], 'password': passwords[index]}
 
-    Authenticator = stauth.Authenticate(credentials, cookie_name='Streamlit', key='a05wuxpbrrh_CNwCQ3dXtrTXatRCyaV1me5B4ZV3J4wk', cookie_expiry_days=4)
+    Authenticator = stauth.Authenticate(credentials, cookie_name='Streamlit', key='abcdef', cookie_expiry_days=4)
 
     email, authentication_status, username = Authenticator.login(':green[Login]', 'main')
 
