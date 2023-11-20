@@ -97,6 +97,7 @@ sqlglot
 stack-data
 statsmodels
 streamlit
+streamlit_authenticator
 streamlit-option-menu
 streamlit-pandas-profiling
 tangled-up-in-unicode
