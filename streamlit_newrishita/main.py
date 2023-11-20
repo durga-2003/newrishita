@@ -170,4 +170,4 @@ try:
 
 
 except:
-    st.fail('Refresh Page')
+    st.success('Refresh Page')
