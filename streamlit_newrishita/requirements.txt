@@ -104,6 +104,7 @@ streamlit-option-menu
 streamlit-pandas-profiling
 tangled-up-in-unicode
 tenacity
+tensorflow
 threadpoolctl
 toml
 toolz
