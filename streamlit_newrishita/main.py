@@ -56,15 +56,14 @@ try:
                 with st.sidebar:
                     selected = option_menu(
                         menu_title = None,
-                        options=["Login","Main","Advance"],
+                        options=["Login","Advance"],
                     )
                 if selected == "Login":
                    st.sidebar.subheader(f'Welcome {username}')
                    Authenticator.logout('Log Out', 'sidebar')
-                if selected == "Main":
                 
-                    start = '2010-01-01'
-                    end = '2023-7-30'
+                   start = '2010-01-01'
+                   end = '2023-7-30'
 
 
                     st.title('Stock Future Predicter')
