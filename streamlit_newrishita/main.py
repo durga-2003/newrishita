@@ -10,7 +10,6 @@ import yfinance as yf
 import tensorflow as tf
 
 from keras.models import  load_model
-import streamlit as st
 
 
 st.set_page_config(page_title='Streamlit', page_icon='🐍', initial_sidebar_state='collapsed')
