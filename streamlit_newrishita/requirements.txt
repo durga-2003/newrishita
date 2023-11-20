@@ -18,6 +18,7 @@ contourpy
 cycler
 dacite
 decorator
+deta
 distlib
 duckdb
 et-xmlfile
